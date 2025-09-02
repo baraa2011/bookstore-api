@@ -19,7 +19,7 @@
     
     <properties>
         <java.version>11</java.version>
-        <application-insights.version>3.4.18</application-insights.version>
+        <application-insights.version>2.6.4</application-insights.version>
     </properties>
     
     <dependencies>
@@ -27,6 +27,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+        <!-- Azure Application Insights -->
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>applicationinsights-spring-boot-starter</artifactId>
+            <version>${application-insights.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>applicationinsights-logging-logback</artifactId>
+            <version>${application-insights.version}</version>
         </dependency>
         
         <!-- Test Dependencies -->
