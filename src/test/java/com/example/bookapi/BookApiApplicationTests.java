@@ -46,6 +46,6 @@ public class BookApiApplicationTests {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).hasSize(2);
         assertThat(response.getBody()[0].getTitle()).isEqualTo("The Great Gatsby");
-        assertThat(response.getBody()[1].getTitle()).isEqualTo("Kill aaa Mockingbird");
+        assertThat(response.getBody()[1].getTitle()).isEqualTo("To Kill a Mockingbird");
     }
 }
